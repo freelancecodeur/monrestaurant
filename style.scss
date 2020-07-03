@@ -1,0 +1,79 @@
+*,::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+$boxheight : 754px;
+$boxwidth : 554px;
+$buttonwidth : 200px;
+$boxmargintop : 100px;
+
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.header {
+    background-color: orange;
+    width: 100%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.box-high {
+    height: $boxheight;
+    margin-top: $boxmargintop;
+    
+
+}
+.box-low {
+    height: $boxheight;
+    margin-top: $boxmargintop;
+}
+
+.box-1 {
+    background-color: red;  
+    width: $boxwidth;
+    
+}
+
+.box-2 {
+    background-color: yellow;
+    width: $boxwidth;
+}
+
+.box-3 {
+    background-color: pink; 
+    width: $boxwidth;
+}
+
+.box-4 {
+    background-color: brown;
+    width: $boxwidth;
+}
+
+.button {
+    background: green;
+    width: $buttonwidth;
+}
+
+.footer {
+  background: red;
+}
+
+@media (max-width: 700px) {
+}

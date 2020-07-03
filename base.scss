@@ -1,0 +1,473 @@
+/** 
+ * Mon application OHMYFOOD
+ *
+ */
+
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Segoe";
+    src: url ("fonts/Segoe.ttf");
+    // font-weight: normal;
+    // font-style: normal;
+}
+
+@font-face {
+    font-family: 'comic_reliefregular';
+    src: url('fonts/ComicRelief-webfont.eot');
+    src: url('fonts/ComicRelief-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/ComicRelief-webfont.woff2') format('woff2'),
+        url('fonts/ComicRelief-webfont.woff') format('woff'),
+        url('fonts/ComicRelief-webfont.ttf') format('truetype'),
+        url('fonts/ComicRelief-webfont.svg#comic_reliefregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 
+    Les variables de couleurs
+ */
+$maincolor:#579C87;
+$secondcolor:#FCCA46;
+$bordercolor: #A1C181;
+$linkcolor:#FCCA46;
+$boxshadowcolor:grey;
+$menu1color: #FCDFDB;
+
+/* 
+     Le header
+  */
+
+
+body {
+    margin: 0px;
+    //  width: auto;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+// a:hover {
+//     text-decoration: none;
+// }
+
+a:active {
+    text-decoration: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+header {
+    margin-top: 0px;
+    background-color: #579C87;
+    height: 222px;
+    align-items: center;
+}
+
+header h1 {
+    padding-top: 0px;
+    color: #fdcb46;
+    text-align: center;
+    font-family: "arial";
+    font-size: 88px;
+    letter-spacing: -7px;
+    text-decoration: none;
+    margin: 0;
+    line-height: 218px;
+
+}
+
+
+
+.menu_container {
+    margin-top: 100px;
+    display: grid;
+    grid-template-rows: repeat(2, 754px);
+    grid-template-columns: repeat(2, 534px);
+    grid-gap: 100px;
+    justify-content: center;
+
+
+}
+
+.items {
+    padding: 20px;
+    font-size: 30px;
+    font-family: sans-serif;
+    box-shadow: inset 0 0 0em $boxshadowcolor, 0 0 1em $boxshadowcolor;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.items a {
+    text-decoration: none;
+
+    &:hover {
+        // background-color: darken($menu1color, 5);
+        transform: scale(1.1);
+        opacity: 0.5;
+        transition: all ease-in-out 0.5s;
+    }
+}
+
+.item1 {
+    background-color: #FCDFDB;
+    transition: background-color 250ms;
+
+
+    // &:hover {
+    //     // background-color: darken($menu1color, 5);
+    //     transform: scale(1.1);
+    //     opacity: 0.5;
+    //     transition: all ease-in-out 0.5s;
+    // }
+
+}
+
+.item2 {
+    background-color: #FFF5FE;
+    transition: background-color 250ms;
+
+    // &:hover {
+    //     background-color: darken(#fff5fe, 5);
+    // }
+
+}
+
+.item3 {
+    background-color: #F9F9F9;
+    transition: background-color 250ms;
+
+    // &:hover {
+    //     background-color: darken(#f9f9f9, 5);
+    // }
+
+}
+
+.item4 {
+    background-color: #FDFFFD;
+    transition: background-color 250ms;
+
+    // &:hover {
+    //     background-color: darken(#fdfffd, 5);
+    // }
+
+}
+
+.icon {
+    text-align: center;
+}
+
+.menu_1 {
+    font-family: Segoe print;
+    font-size: 25px;
+    text-align: center;
+    color: #3c1218;
+}
+
+.titre_menu1 {
+    color: #3c1218;
+    text-align: center;
+    font-family: "comic_reliefregular";
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 1.9em;
+}
+
+.menu_2 h2 {
+    font-family: alegrya-serif;
+    font-weight: bold;
+    background: -o-linear-gradient(left, #d8852e, #905bfd);
+    background: linear-gradient(85deg, #d8852e, #905bfd);
+    background-clip: border-box;
+    background-clip: text;
+    color: transparent;
+
+}
+
+.titre_menu2 {
+    color: #C77412;
+    text-align: center;
+    font-family: "arial-serif";
+    font-style: bold;
+    font-size: 1.9em;
+}
+
+.menu_3 h2 {
+    font-family: alexbrush;
+    font-weight: bold;
+    background: -webkit-gradient(linear, left top, right top, from(#2b58e6), to(#0887fb));
+    background: -o-linear-gradient(left, #2b58e6, #0887fb);
+    background: linear-gradient(90deg, #2b58e6, #0887fb);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+
+}
+
+.titre_menu3 {
+    font-family: "Comic_relief";
+    font-style: italic;
+    color: #0887fb;
+    text-align: center;
+    font-style: bold;
+    font-size: 1.9em;
+}
+
+.menu_4 h2 {
+    font-family: kaushanscript;
+    font-weight: bold;
+    background: linear-gradient(45deg, #3e923a, #beff7f 75%);
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    padding: 5px;
+
+
+}
+
+.titre_menu4 {
+    font-family: "Comic_relief";
+    font-style: italic;
+    color: #3e923a;
+    text-align: center;
+    font-style: bold;
+    font-size: 1.9em;
+}
+
+
+
+.menu_3 {}
+
+.menu_4 {}
+
+.menu_titre {}
+
+
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $maincolor;
+    width: 450px;
+    height: 90px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
+
+}
+
+.btn p {
+    color: $secondcolor;
+    font-size: 2em;
+    font-family: "Arial";
+}
+
+.btn-rounded {
+    border-radius: 0.7rem;
+}
+
+.rond {
+    display: inline-block;
+    height: 0.1em;
+    width: 0.1em;
+    border-radius: 50%;
+    background-color: #fdcb46;
+    overflow-x: visible;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #579C87;
+    position: sticky;
+    z-index: 10;
+    bottom: 0;
+    height: 120px;
+}
+
+.footer-border {
+    border-top: $bordercolor solid 1px;
+
+}
+
+footer a {
+    line-height: 7vh;
+    margin: 0 10px;
+    color: #fdcb46;
+    font-family: "Arial";
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover {
+    -webkit-animation: shake 100ms infinite alternate;
+    animation: shake 100ms infinite alternate;
+}
+
+.para {
+    margin: 50px 150px 50px 150px;
+}
+
+.titrepage {
+    text-align: center;
+}
+
+#mentions {
+    font-size: 20px;
+
+}
+
+#contact {
+    font-size: 20px;
+
+}
+
+@keyframes loading {
+    from {
+        transform: translateY(0em);
+    }
+
+    to {
+        transform: translateY(-0.5em);
+    }
+}
+
+.point_1 {
+    animation: loading 0.6s infinite alternate;
+    animation-delay: 0.1s;
+}
+
+.point_2 {
+    animation: loading 0.6s infinite alternate;
+    animation-delay: 0.2s;
+}
+
+.point_3 {
+    animation: loading 0.6s infinite alternate;
+    animation-delay: 0.3s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 0);
+    }
+
+    100% {
+        transform: translate(-1px, 0);
+    }
+}
+
+@media screen and (max-width: 414px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    h1 {
+        margin: 0px 10px 0px 10px;
+    }
+
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+        min-width: 392px;
+
+    }
+
+    .btn {
+        width: 265px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (min-width: 415px) and (max-width: 767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .titre_entete h2 {
+        font-family: 'Devonshire', cursive;
+        font-size: 32px;
+        color: #3D1319;
+    }
+
+    .menu_container {
+        display: flex;
+        flex-direction: column;
+        margin: 10px 10px;
+
+
+    }
+
+    .btn {
+        width: 265px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width:1279px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu_container {
+        margin-top: 100px;
+        display: grid;
+        grid-template-rows: repeat(2, 554px);
+        grid-template-columns: repeat(2, 334px);
+        grid-gap: 50px;
+        justify-content: center;
+
+
+    }
+
+    .btn {
+        width: 265px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+}

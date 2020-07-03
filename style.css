@@ -1,0 +1,91 @@
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.header {
+  background-color: orange;
+  width: 100%;
+  font-size: 22px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.box-high {
+  height: 754px;
+  margin-top: 100px;
+}
+
+.box-low {
+  height: 754px;
+  margin-top: 100px;
+}
+
+.box-1 {
+  background-color: red;
+  width: 554px;
+}
+
+.box-2 {
+  background-color: yellow;
+  width: 554px;
+}
+
+.box-3 {
+  background-color: pink;
+  width: 554px;
+}
+
+.box-4 {
+  background-color: brown;
+  width: 554px;
+}
+
+.button {
+  background: green;
+  width: 200px;
+}
+
+.footer {
+  background: red;
+}
+/*# sourceMappingURL=style.css.map */
