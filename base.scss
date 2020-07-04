@@ -14,8 +14,6 @@
 @font-face {
     font-family: "Segoe";
     src: url ("fonts/Segoe.ttf");
-    // font-weight: normal;
-    // font-style: normal;
 }
 
 @font-face {
@@ -387,6 +385,66 @@ footer a:hover {
     }
 }
 
+
+@media screen and (min-width: 325px) and (max-width: 413px) {
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+    }
+
+    body {
+        // overflow-x: hidden;
+    }
+
+    header h1 {
+        margin: 0 10px 0 10px;
+        font-size: 70px;
+        
+    }
+
+    h1 {
+        // margin: 0px 10px 0px 10px;
+    }
+
+    .menu_container {
+        
+    
+  
+    }
+
+    .menu_1{
+        font-size: 20px;
+    }
+
+    .icon {
+     
+    }
+
+    .items{
+        font-size: 20px;
+
+    }
+
+    .items1{
+      
+        
+    }
+
+    .btn {
+        width: 265px;
+    }
+
+    footer {
+        margin: 0px;
+    }
+
+}
+
 @media screen and (max-width: 414px) {
 
     body {
@@ -401,7 +459,8 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         margin: 10px 10px;
-        min-width: 392px;
+        text-align: center;
+        
 
     }
 
@@ -410,7 +469,11 @@ footer a:hover {
     }
 
     footer {
-        margin: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+        
     }
 
 }
@@ -431,6 +494,7 @@ footer a:hover {
         display: flex;
         flex-direction: column;
         margin: 10px 10px;
+        text-align: center;
 
 
     }
@@ -458,6 +522,7 @@ footer a:hover {
         grid-template-columns: repeat(2, 334px);
         grid-gap: 50px;
         justify-content: center;
+        text-align: center;
 
 
     }
