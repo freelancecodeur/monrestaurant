@@ -415,6 +415,13 @@ footer a:hover {
   footer {
     margin: 0px;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 414px) {
